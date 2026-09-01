@@ -1,0 +1,189 @@
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+h1 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 20px;
+}
+h2 {
+  color: rgba(255, 251, 5, 0.884);
+    background-color: rgb(64, 68, 70);
+    font-weight: normal;
+  margin-bottom: 20px;
+}
+.card {
+  background: url("../images/mosque.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 100%);
+  font-family: "Gloria Hallelujah", cursive;
+}
+/*
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  background-color: rgb(64, 68, 70);
+  transition: color 1s; 
+}
+.card:hover:before,
+.card:hover:after {
+  opacity: 1;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+*/ 
+
+/*
+.card::after {
+
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+
+}
+
+
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+  */
+.user {
+  color: white;
+  font-size: 24px;
+  font-family: "Titan One", cursive;
+}
+
+
+/* Animation 
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+*/
+.wrapper {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 25ch;
+  direction: rtl;
+  /* dont want the blinking border
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;*/
+  animation: typing 2s steps(22);
+  white-space: normal;
+  overflow: hidden;
+ /* border-right: 3px solid;*/
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+     border-color: transparent
+  }
+}
+
+
+/*
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+*/
+
+/*from w3 school*/
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}
+.w3-padding-large{padding:12px 24px!important}
+.w3-display-topright{position:absolute;right:0;top:0}
+.w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-center {text-align:center}
+
+.my-icon{
+    width: 40px;
+  height: 40px;
+    fill: #ff4500;       /* Changes the inside color */
+  stroke: #333333;     /* Changes the border outline */
+  stroke-width: 2px;   /* Sets border thickness */
+}
+
+.my-icon:hover path {
+  fill: #0080ff;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template: 200px / auto auto auto;
+  grid-gap: 10px;
+  background-color: #2ce68f;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
