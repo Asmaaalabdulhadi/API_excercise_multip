@@ -22,7 +22,7 @@ h2 {
   color: rgba(255, 251, 5, 0.884);
     background-color: rgb(64, 68, 70);
     font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .card {
   background: url("../images/mosque.PNG");
@@ -41,6 +41,10 @@ h2 {
   font-size: 1.5em;
   color: rgb(88 199 250 / 100%);
   font-family: "Gloria Hallelujah", cursive;
+}
+
+p{
+    font-size: 10px;
 }
 /*
 .card:hover {
@@ -161,8 +165,8 @@ a {
 .w3-center {text-align:center}
 
 .my-icon{
-    width: 40px;
-  height: 40px;
+    width: 30px;
+  height: 30px;
     fill: #ff4500;       /* Changes the inside color */
   stroke: #333333;     /* Changes the border outline */
   stroke-width: 2px;   /* Sets border thickness */
@@ -175,14 +179,15 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template: 200px / auto auto auto;
-  grid-gap: 10px;
-  background-color: #2ce68f;
+  grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 5px;
+  background-color: #114b30;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(117, 167, 170, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
